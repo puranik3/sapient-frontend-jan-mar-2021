@@ -4,13 +4,138 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <style>
+            table, caption {
+                margin: 20px 0;
+            }
+
+            table, th, td {
+                border-width: 1px;
+                border-style: solid;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            .weather-report, .weather-report th, .weather-report td {
+                border-color: green;
+            }
+            
+            .weather-forecast, .weather-forecast th, .weather-forecast td {
+                border-color: crimson;
+            }
+
+            tr:nth-child(even) {
+                background-color: lightgray;
+            }
+    
+            th, td {
+                padding: 10px;
+            }
+
+            th {
+                font-weight: normal;
+            }
+
+            caption {
+                caption-side: bottom;
+            }
+        </style>
     </head>
     <body>
-        table, tbody, thead, caption, tr, th, td
+        table, tbody, thead, tfoot, caption, tr, th, td
         A weather report table (min, max, city, rainfall)
 
         3 - 4 places
 
         BONUS: Add borders to the table
+        <table class="weather-report">
+            <caption>Weather in metro cities</caption>
+            <thead>
+                <tr>
+                    <th scope="col">City</th>
+                    <th scope="col">Rainfall</th>
+                    <th scope="col">Min</th>
+                    <th scope="col">Max</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Bangalore</th>
+                    <td>10</td>
+                    <td>22</td>
+                    <td>32</td>
+                </tr>
+                <tr>
+                    <th scope="row">Chennai</th>
+                    <td>5</td>
+                    <td>25</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <th scope="row">New Delhi</th>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <th scope="row">Chennai</th>
+                    <td>5</td>
+                    <td>25</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <th scope="row">New Delhi</th>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>15</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <table class="weather-forecast">
+            <caption>Weather in metro cities</caption>
+            <thead>
+                <tr>
+                    <th scope="col">City</th>
+                    <th scope="col">Rainfall</th>
+                    <th scope="col">Min</th>
+                    <th scope="col">Max</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Bangalore</th>
+                    <td>10</td>
+                    <td>22</td>
+                    <td>32</td>
+                </tr>
+                <tr>
+                    <th scope="row">Chennai</th>
+                    <td>5</td>
+                    <td>25</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <th scope="row">New Delhi</th>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <th scope="row">Chennai</th>
+                    <td>5</td>
+                    <td>25</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <th scope="row">New Delhi</th>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>15</td>
+                </tr>
+            </tbody>
+        </table>
     </body>
 </html>
