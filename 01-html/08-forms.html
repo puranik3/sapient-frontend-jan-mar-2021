@@ -10,14 +10,14 @@
         purpose - to submit data
 
         <!-- no action - request is for this very page -->
-        <form action="08-success.html" method="POST">
+        <form action="08-success.html" method="POST" novalidate>
             <fieldset>
                 <legend>User name</legend>
                 <label for="fname">First Name</label>
-                <input type="text" name="fname" id="fname" value="John" />
+                <input type="text" name="fname" id="fname" value="John" required />
                 
                 <label for="lname">Last Name</label>
-                <input type="text" name="lname" id="lname" />
+                <input type="text" name="lname" id="lname" placeholder="Your surname" required />
             </fieldset>
             
             <label for="password">Password</label>
@@ -51,37 +51,10 @@
             <input type="checkbox" name="base_location" value="nd" /> Noida
             <input type="checkbox" name="base_location" value="mum" /> Mumbai
 
-            <!--
-                Other input types:
-                type="checkbox" (multiple selection)
-                type="radio" (single selection)
-                
-                
-                
-                type="search"
-                type="date" -> what attributes can you apply?
-
-                how to have default selection? how is the value of select determined?
-                <select>
-                    <option></option>
-                </select>
-
-                <input type="submit" />
-                <input type="reset" />
-                <input type="button" />
-                
-                Input attributes
-                value
-                
-                min
-                max
-                required
-                placeholder
-                
-                novalidate
-            -->
-
-            <button>Submit</button>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <input type="submit" value="Submit" />
+            <input type="button" value="General button" />
         </form>
     </body>
 </html>

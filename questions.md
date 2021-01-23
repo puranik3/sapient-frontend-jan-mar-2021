@@ -1,1 +1,3 @@
 - robots.txt
+- expected enter key press behavior in input in form and how to enable submission on it
+- how to change date format in date input
