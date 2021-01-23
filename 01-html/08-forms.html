@@ -10,9 +10,77 @@
         purpose - to submit data
 
         <!-- no action - request is for this very page -->
-        <form action="08-success.html">
-            First Name: <input name="fname" />
-            Last Name: <input name="lname" />
+        <form action="08-success.html" method="POST">
+            <fieldset>
+                <legend>User name</legend>
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname" value="John" />
+                
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname" />
+            </fieldset>
+            
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+
+            <fieldset>
+                <legend>Base location</legend>
+                <label>
+                    <input type="radio" name="base_location" value="blr" />
+                    Bangalore
+                </label>
+
+                <label>
+                    <input type="radio" name="base_location" value="ggn" checked />
+                    Gurgaon
+                </label>
+                <label>
+                    <input type="radio" name="base_location" value="nd" />
+                    Noida
+                </label>
+                <label>
+                    <input type="radio" name="base_location" value="mum" />
+                    Mumbai
+                </label>
+            </fieldset>
+            
+
+            <!-- add fieldset, leb=gend, label etc. -->
+            <input type="checkbox" name="base_location" value="blr" /> Bangalore
+            <input type="checkbox" name="base_location" value="ggn" /> Gurgaon
+            <input type="checkbox" name="base_location" value="nd" /> Noida
+            <input type="checkbox" name="base_location" value="mum" /> Mumbai
+
+            <!--
+                Other input types:
+                type="checkbox" (multiple selection)
+                type="radio" (single selection)
+                
+                
+                
+                type="search"
+                type="date" -> what attributes can you apply?
+
+                how to have default selection? how is the value of select determined?
+                <select>
+                    <option></option>
+                </select>
+
+                <input type="submit" />
+                <input type="reset" />
+                <input type="button" />
+                
+                Input attributes
+                value
+                
+                min
+                max
+                required
+                placeholder
+                
+                novalidate
+            -->
+
             <button>Submit</button>
         </form>
     </body>
