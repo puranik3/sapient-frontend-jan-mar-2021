@@ -7,9 +7,19 @@
         <style>
             progress {
                 width: 100%;
-                background-color: crimson;
-                border: 1px solid black;
-                border-radius: 6px;
+                border: none;
+            }
+
+            progress::-webkit-progress-value {
+                background: red;
+            }
+
+            progress::-webkit-progress-bar {
+                background: blue;
+            }
+
+            progress::-moz-progress-bar {
+                background: lightcolor;
             }
         </style>
     </head>
