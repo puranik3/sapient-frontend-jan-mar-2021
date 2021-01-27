@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- 
+            Links can be 4 states (and some more)
+            1. unvisited
+            2. visited (browser history has it)
+            3. hover (mouse is over the link)
+            4. active (mouse click in progress)
+
+            We have pseudo-classes applied to the link in these states
+        -->
+        <Style>
+            a {
+                font-size: 16px;
+                color: blue;
+            }
+
+            a:visited {
+                font-size: 28px;
+                text-decoration: none;
+                color: crimson;
+            }
+
+            a:hover {
+                font-size: 32px;
+                color: gold;
+            }
+
+            a:active {
+                font-size: 40px;
+                color: olive;
+            }
+        </Style>
+    </head>
+    <body>
+        <a href="https://www.google.com" id="link-1">Google search</a>
+        <a href="https://www.google.com" id="link-2">Google search</a>
+    </body>
+</html>
