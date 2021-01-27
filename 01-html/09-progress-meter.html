@@ -16,22 +16,24 @@
     <body>
         <!-- progress : eg. progress bar (progress of some process) -->
         <!-- meter : eg. download / upload in speedtest.net -->
-        <progress value="0" max="100" id="download-progress">0%</progress>
+        <progress value="0" max="100" id="download-progress">The download has progressed <span id="download-value">0</span>%</progress>
 
         <script>
             const downloadProgress = document.getElementById( 'download-progress' );
 
             let id = setInterval(function() {
                 let currentValue = parseInt( downloadProgress.getAttribute( 'value' ), 10 );
+                let newValue = currentValue + 10;
+                downloadProgress.setAttribute( 'value', newValue );
                 
-                if( currentValue >= 100) {
-                    currentValue = 100;
+                if( newValue >= 100) {
+                    newValue = 100;
                     clearInterval( id );
                 }
                 
-                downloadProgress.setAttribute( 'value', currentValue + 10 );
-                downloadProgress.innerText = ( currentValue + 10 ) + '%';
-                console.log( currentValue + 10 );
+                // this does not appear on the page - 
+                document.getElementById( 'download-value' ).innerText = newValue + '%';
+                console.log( newValue );
             }, 200);
         </script>
     </body>
