@@ -4,20 +4,28 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <style>
+            :focus {
+                outline-color: lightblue;
+                outline-style: dashed;
+                outline-width: 3px;
+            }
+        </style>
     </head>
     <body>
         what ?querystring - querystring
         purpose - to submit data
 
         <!-- no action - request is for this very page -->
-        <form action="08-success.html" method="POST" novalidate>
+        <form action="08-success.html" method="POST" novalidate enctype="multipart/form-data">
             <fieldset>
                 <legend>User name</legend>
                 <label for="fname">First Name</label>
-                <input type="text" name="fname" id="fname" value="John" required />
+                <input type="text" name="fname" id="fname" value="John" disabled required />
                 
                 <label for="lname">Last Name</label>
-                <input type="text" name="lname" id="lname" placeholder="Your surname" required />
+                <!-- autocomplete="on" | "off"  -->
+                <input type="text" name="lname" id="lname" autocomplete="off" placeholder="Your surname" required autofocus />
             </fieldset>
             
             <label for="password">Password</label>
@@ -43,6 +51,23 @@
                     Mumbai
                 </label>
             </fieldset>
+
+            <datalist id="cities">
+                <option>Chennai</option>
+                <option>Gurgaon</option>
+                <option>Bangalore</option>
+                <option>Mumbai</option>
+            </datalist>
+
+            <!-- Multiple option select using JS : https://www.meziantou.net/html-multiple-selections-with-datalist.htm -->
+            Base location: <input list="cities" name="city" id="city" />
+            Preferred base location: <input list="cities" name="preferred-city" id="preferred-city" />
+
+            <!-- rrggbb : 0 - f : 000000 -->
+            <label for="favorite-color">Favorite color</label>
+            <input type="color" name="favorite-color" id="favorite-color" />
+
+            <input type="file" />
             
 
             <!-- add fieldset, leb=gend, label etc. -->
