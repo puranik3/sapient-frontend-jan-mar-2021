@@ -16,7 +16,7 @@
     <body>
         <!-- progress : eg. progress bar (progress of some process) -->
         <!-- meter : eg. download / upload in speedtest.net -->
-        <progress value="0" max="100" id="download-progress">The download has progressed <span id="download-value">0</span>%</progress>
+        The download has progressed <progress value="0" max="100" id="download-progress">0%</progress>
 
         <script>
             const downloadProgress = document.getElementById( 'download-progress' );
@@ -32,7 +32,7 @@
                 }
                 
                 // this does not appear on the page - 
-                document.getElementById( 'download-value' ).innerText = newValue + '%';
+                downloadProgress.innerText = newValue + '%';
                 console.log( newValue );
             }, 200);
         </script>
