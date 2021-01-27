@@ -28,3 +28,6 @@
         * Inline - a, img, strong
         * Block and inline are CSS display types - inline-block, table, inline-table, table-cell, table-row, grid, flex
     * What is DRY?
+    * Explore combinators - +, ~ (what is the difference between these two)
+    * Explore :nth-child(3n + 1), :last-child, :first-child
+    
