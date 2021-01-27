@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/01-external.css">
+        <!-- 2nd way : internal (in-document / embedded in HTML document)-->
+        <style>
+            #div-1 {
+                color: crimson;
+                font-size: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 1st way: inline styles -->
+        <!-- inline styles is least preferred -->
+        <!--
+            1. We have HTML and CSS together
+            2. Making changes to styles is difficult - we must make changes to all elements that have similar styles
+            3. They are difficult to override (it is difficult to change inline styling from elsewhere in code once it is given inline)
+        -->
+        <p style="color: blue; font-size: 40px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsum laboriosam ut sapiente. Aspernatur, facere cumque nam voluptates aliquid veniam ipsum exercitationem perspiciatis assumenda vero eveniet nobis aut rem in.
+        </p>
+        <p style="color: blue; font-size: 40px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora at illum vel vero vitae ab expedita consequatur, est reiciendis! Voluptatibus at debitis nesciunt quod recusandae! Doloribus placeat sint eos vel.
+        </p>
+        <div id="div-1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus officia, asperiores veniam repudiandae, vitae exercitationem laboriosam tenetur consequuntur obcaecati esse porro nobis eum iusto ut labore voluptates laborum. Placeat, atque!
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia dolorem aliquam dignissimos cumque aperiam provident fugiat corporis laborum quisquam, soluta pariatur. Qui officia tenetur aut eos aspernatur tempora omnis repellendus.
+        </div>
+        <div id="div-3">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus officia, asperiores veniam repudiandae, vitae exercitationem laboriosam tenetur consequuntur obcaecati esse porro nobis eum iusto ut labore voluptates laborum. Placeat, atque!
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia dolorem aliquam dignissimos cumque aperiam provident fugiat corporis laborum quisquam, soluta pariatur. Qui officia tenetur aut eos aspernatur tempora omnis repellendus.
+        </div>
+    </body>
+</html>
