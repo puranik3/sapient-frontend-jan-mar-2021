@@ -23,3 +23,4 @@
         formnovalidate
 - Jan 27
     * Understand and use meter tag
+    * Which are inline and which are block - main, section, article, h1, a, img, ul, li, strong
