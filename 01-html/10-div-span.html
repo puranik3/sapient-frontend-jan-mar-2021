@@ -8,15 +8,21 @@
             .crimson {
                 color: crimson;
             }
+
+            .olive {
+                color: olive;
+            }
         </style>
     </head>
     <body>
         <h1>div and span tags</h1>
         <!-- Two HTML tags : div (division), span - container elements -->
         <!-- div is a block-level container element -->
+        <!-- div is NOT a semantic tag - when possible use semantics tags instead of div -->
         <div class="crimson">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae mollitia, nihil earum sunt asperiores maxime tenetur iure amet explicabo praesentium provident quia dolorum quasi laborum accusamus, dolore similique officiis totam.
+                <span class="olive">some content in another span</span>
             </p>
             <p>
                 <!-- span is an inline container -->
@@ -28,7 +34,7 @@
             <br />
             another line in the div
         </div>
-        <span>some content in another span</span>
+        <span class="olive">some content in another span</span>
         <footer>
             &copy; Sapient
         </footer>

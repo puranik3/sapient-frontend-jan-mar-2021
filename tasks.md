@@ -23,4 +23,7 @@
         formnovalidate
 - Jan 27
     * Understand and use meter tag
-    * Which are inline and which are block - main, section, article, h1, a, img, ul, li, strong
+    * Which are inline and which are block - main, section, article, h1, a, img, ul, li, strong (3 minutes)
+        * Block - main, section, article, h1, ul, li
+        * Inline - a, img, strong
+        * Block and inline are CSS display types - inline-block, table, inline-table, table-cell, table-row, grid, flex
