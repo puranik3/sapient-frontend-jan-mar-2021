@@ -30,4 +30,5 @@
     * What is DRY?
     * Explore combinators - +, ~ (what is the difference between these two)
     * Explore :nth-child(3n + 1), :last-child, :first-child
+    * Specificity of selectors
     

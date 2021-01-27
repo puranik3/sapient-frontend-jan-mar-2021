@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            /*
+                1. Inline styles win (inline styles have highest specificity (importance))
+                2. Last style wins
+            */
+            div {
+                color: olive;
+            }
+            
+            div {
+                color: blue;
+                color: magenta;
+            }
+        </style>
+        <style>
+            div {
+                color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- inline styles have highest specificity (importance) -->
+        <!-- <div style="color: crimson;"> -->
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quisquam incidunt ipsam dignissimos ipsa, mollitia vitae alias, iure optio at eveniet aut sunt quidem? Quos aut delectus consequuntur ut eos?
+        </div>
+        <style>
+            div {
+                color: brown;
+            }
+        </style>
+        <link rel="stylesheet" href="09-conflict-resolution.css">
+    </body>
+</html>
