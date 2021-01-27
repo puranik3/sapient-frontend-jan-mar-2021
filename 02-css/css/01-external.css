@@ -2,3 +2,11 @@
     color: crimson;
     font-size: 40px;
 }
+
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}

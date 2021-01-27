@@ -4,6 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <!-- 
+            1. switching to different css is easy
+            2. you can prevent CSS from loading if required
+            3. manintaining common styles across website
+        -->
         <link rel="stylesheet" href="css/01-external.css">
         <!-- 2nd way : internal (in-document / embedded in HTML document)-->
         <style>
@@ -27,16 +32,16 @@
         <p style="color: blue; font-size: 40px;">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora at illum vel vero vitae ab expedita consequatur, est reiciendis! Voluptatibus at debitis nesciunt quod recusandae! Doloribus placeat sint eos vel.
         </p>
-        <div id="div-1">
+        <div id="div-1" class="bold">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus officia, asperiores veniam repudiandae, vitae exercitationem laboriosam tenetur consequuntur obcaecati esse porro nobis eum iusto ut labore voluptates laborum. Placeat, atque!
         </div>
         <div>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia dolorem aliquam dignissimos cumque aperiam provident fugiat corporis laborum quisquam, soluta pariatur. Qui officia tenetur aut eos aspernatur tempora omnis repellendus.
         </div>
-        <div id="div-3">
+        <div id="div-3" class="underline">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus officia, asperiores veniam repudiandae, vitae exercitationem laboriosam tenetur consequuntur obcaecati esse porro nobis eum iusto ut labore voluptates laborum. Placeat, atque!
         </div>
-        <div>
+        <div class="bold underline">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia dolorem aliquam dignissimos cumque aperiam provident fugiat corporis laborum quisquam, soluta pariatur. Qui officia tenetur aut eos aspernatur tempora omnis repellendus.
         </div>
     </body>
