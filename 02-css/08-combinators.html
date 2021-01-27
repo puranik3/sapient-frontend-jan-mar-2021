@@ -27,6 +27,14 @@
             div > p.x {
                 border: 1px solid black;
             }
+
+            #a > #b > div.y div.p {
+                color: blue;
+            }
+
+            p, div {
+                border: 1px solid black;
+            }
         </style>
     </head>
     <body>
@@ -65,5 +73,18 @@
         </section>
 
         <span style="border: 1px solid black;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis doloribus aliquid incidunt cupiditate assumenda, non quos laudantium optio sit minima illo odit fugit cumque? Porro omnis quos maxime pariatur repellat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam cum eaque ipsum eius non perferendis asperiores earum beatae. Labore quo voluptatibus, iste nihil mollitia neque voluptas quos impedit dignissimos ipsam.</span>
+
+        <div id="a">
+            <div id="b">
+                <div class="y">
+                    <div class="p">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, expedita. Explicabo alias quidem laborum, quos veniam accusamus modi natus impedit quia eligendi consequatur aperiam. Consectetur quidem vel beatae cumque inventore?
+                    </div>
+                </div>
+                <div class="z">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aut eius dolor incidunt nam, explicabo earum odit voluptatem nihil non aliquam numquam. Perspiciatis quis maxime ullam eveniet natus nulla officiis!
+                </div>
+            </div>    
+        </div>
     </body>
 </html>
