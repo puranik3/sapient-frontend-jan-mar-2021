@@ -14,6 +14,7 @@
             We have pseudo-classes applied to the link in these states
         -->
         <Style>
+            /* Resolving CSS conflicts: Last rule wins in case 2 rules set the same property */
             a {
                 font-size: 16px;
                 color: blue;
@@ -25,19 +26,30 @@
                 color: crimson;
             }
 
+            :active { /* :active means *:active */
+                font-size: 40px;
+                color: olive;
+                text-decoration: none;
+            }
+
             a:hover {
                 font-size: 32px;
                 color: gold;
             }
 
-            a:active {
-                font-size: 40px;
-                color: olive;
+            :focus { /* on focusable elements */
+                outline: 3px solid gold;
             }
         </Style>
     </head>
     <body>
         <a href="https://www.google.com" id="link-1">Google search</a>
         <a href="https://www.google.com" id="link-2">Google search</a>
+
+        <input type="text" />
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate perspiciatis nesciunt eligendi soluta veniam aspernatur impedit repudiandae, aperiam harum odit cum quisquam eos ducimus obcaecati quaerat dolor quae doloribus voluptatibus.
+        </p>
     </body>
 </html>

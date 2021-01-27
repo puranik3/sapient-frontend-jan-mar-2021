@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            /* descendant selector (space is a combinator) */
+            div p {
+                color: crimson;
+            }
+
+            .x {
+                font-weight: bold;
+            }
+
+            /* select paragraphs which have class x (no space is also a combinator) */
+            p.x {
+                font-style: italic;
+            }
+
+            div p.x {
+                text-decoration: line-through;
+            }
+
+            /* parent selector (>) */
+            div > p.x {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- select elements based on element relationships -->
+        <p>
+            para 1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore eius porro earum sed reiciendis aliquid minima, atque est quibusdam. Dolor repudiandae quaerat neque ipsa et suscipit laboriosam, reiciendis rerum temporibus!
+        </p>
+        <div>
+            div 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptates a sed blanditiis esse consequuntur labore delectus, exercitationem eius quam odio facilis, quas rerum provident explicabo dolores quis adipisci accusamus?
+            <section>
+                <p>
+                    para 2 (div -> section -> p): Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit officia minus, suscipit id qui, provident consequatur aut ad tenetur corporis numquam itaque in repellendus deleniti dolorum recusandae molestias alias. Temporibus.
+                </p>
+                <p class="x">
+                    para 3 (div -> section -> p): Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit officia minus, suscipit id qui, provident consequatur aut ad tenetur corporis numquam itaque in repellendus deleniti dolorum recusandae molestias alias. Temporibus.
+                </p>
+            </section>
+        </div>
+        <div>
+            div 2: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium atque, distinctio voluptatem quidem harum nostrum. Minima assumenda possimus blanditiis nisi unde? Quas expedita maxime eum explicabo, ipsam totam iusto harum.
+            <p>
+                para 4: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto neque odit omnis, ad unde facere explicabo nam soluta rerum quibusdam iste fugit consectetur, optio voluptatem quos, consequatur eos. Harum, consectetur.
+            </p>
+            <p class="x">
+                para 5: Lorem ipsum dolor sit amet consectetur adipisicing elit. Error alias illum adipisci accusamus iusto, officiis molestiae ipsum mollitia impedit culpa eum eos cumque consequatur minima eaque provident maiores facilis ipsa.
+            </p>
+        </div>
+        <p class="x">
+            para 6: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eveniet voluptas quos voluptatum perspiciatis nostrum voluptates. Quaerat, ipsa minus maxime natus suscipit sequi placeat porro consectetur maiores, quo sapiente vero.
+        </p>
+        <section>
+            section: Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, facilis sunt animi dolore omnis inventore. Voluptatem quibusdam necessitatibus perferendis, suscipit repudiandae magnam similique sequi harum quisquam fugit illo dolorem quidem.
+            <p>
+                para 7: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta delectus, consectetur sint labore id quis iusto quia repudiandae suscipit dolores deserunt sit, facere beatae, eveniet repellendus? Reiciendis necessitatibus harum quos?
+            </p>
+        </section>
+
+        <span style="border: 1px solid black;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis doloribus aliquid incidunt cupiditate assumenda, non quos laudantium optio sit minima illo odit fugit cumque? Porro omnis quos maxime pariatur repellat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam cum eaque ipsum eius non perferendis asperiores earum beatae. Labore quo voluptatibus, iste nihil mollitia neque voluptas quos impedit dignissimos ipsam.</span>
+    </body>
+</html>
