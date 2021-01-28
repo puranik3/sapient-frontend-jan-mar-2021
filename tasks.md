@@ -31,4 +31,18 @@
     * Explore combinators - +, ~ (what is the difference between these two)
     * Explore :nth-child(3n + 1), :last-child, :first-child
     * Specificity of selectors
+- Jan 28
+    * background-origin
+    * Explore radial-gradient
+    * font property (shorthand)
+    * Why shorthands may not be a good idea to use (why should we prefer using longer version)
+    * font-weight: 100 - 900, bold
+    * font-style: italic
+    * text-decoration: underline, overline, line-through, none (very useful)
+    * text-transform: uppercase, lowercase, capitalize
+    * text-align: left, right, center, justify
+    * word-spacing, letter-spacing
+    
+
+
     
