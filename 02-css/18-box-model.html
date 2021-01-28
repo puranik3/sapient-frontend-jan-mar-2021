@@ -82,11 +82,13 @@
                 margin: 5%; /* (wrt parent content area width) - 108px */ 
             }
 
-            /* total width (including margins) should be exactly half of parent content area width */
+            /* Exercise: What should we do so that total width (including margins) should be exactly half of parent content area width */
             #div-6 {
+                /* box-sizing: border-box; */
+                width: 40%; /* half width of parent content area for border-box */
                 padding: 5%; /* (wrt parent content area width) - 108px for left and right */
                 border: 20px solid black; /* 40px for left and right */
-                margin: 5%; 
+                margin: 5%;
             }
         </style>
     </head>
