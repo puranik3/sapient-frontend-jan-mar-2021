@@ -6,12 +6,22 @@
         <title>Document</title>
         <style>
             /* targeting using id is "very specific" - it is given a lot of importance */
+            /* #id is more important than .class */
+            /* .class is more important than type */
             #div-1 {
                 color: gold;
             }
 
-            div {
+            #div-2 {
+                color: gold;
+            }
+
+            .x {
                 color: olive;
+            }
+
+            div {
+                color: blue;
                 font-size: 30px;
             }
         </style>
@@ -21,6 +31,12 @@
         <!-- <div style="color: crimson;"> -->
         <div id="div-1">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quisquam incidunt ipsam dignissimos ipsa, mollitia vitae alias, iure optio at eveniet aut sunt quidem? Quos aut delectus consequuntur ut eos?
+        </div>
+        <div id="div-2" class="x">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ea nesciunt ipsa deserunt laborum quasi blanditiis perferendis porro unde sit officia repellat magnam quibusdam quam aliquam neque error, aliquid placeat!
+        </div>
+        <div class="x">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui cumque adipisci a, sit quibusdam modi maiores possimus officia. Error consectetur temporibus quidem dolorum dolorem asperiores ex eum quae beatae rerum?
         </div>
     </body>
 </html>
