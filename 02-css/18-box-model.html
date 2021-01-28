@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            /*
+                Parts of a box
+                1. content
+                2. padding
+                3. border
+                4. margin
+            */
+            /* my screen width is 1280px */
+            /* content area width = 1280px - ( 50px * 2 ) - ( 50px * 2 ) = 1080  */
+            body {
+                padding: 50px;
+                margin: 50px;
+            }
+
+            /* box exceeds content area of parent */
+            #div-1 {
+                width: 100%; /* 100% x content area width of parent - 1080px */ 
+                padding: 30px; /* 1080 + 60 = 1140px */ 
+                border: 10px dashed black; /* 1140 + 20 = 1160 */
+                margin-top: 10px; 
+                margin-right: 20px; /* 1160 + 20 = 1180 */
+                margin-bottom: 30px;
+                margin-left: 40px; /* 1180 + 40 = 1220 */
+                /* margin: 10px 20px 30px 40px; */
+            }
+            
+            /* entire box will be within content area of parent */
+            #div-2 {
+                /* width: 1080 - 140 = 940 */
+                padding: 30px; /* 60 */ 
+                border: 10px dashed black; /* 60 + 20 = 80 */
+                margin-top: 10px; 
+                margin-right: 20px; /* 80 + 20 = 100 */
+                margin-bottom: 30px;
+                margin-left: 40px; /* 100 + 40 = 140 */
+                /* margin: 10px 20px 30px 40px; */
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div-1">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod esse provident cum corporis a, sed quibusdam molestiae nobis officia voluptas eaque, est saepe nesciunt odio et sit, fuga recusandae ea.
+        </div>
+        <div id="div-2">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus eaque neque adipisci alias officiis omnis debitis recusandae odit minus aliquid quasi, nobis quam magnam doloremque dolores dignissimos enim ratione ut.
+        </div>
+    </body>
+</html>
