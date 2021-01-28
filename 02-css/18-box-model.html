@@ -19,7 +19,7 @@
                 margin: 50px;
             }
 
-            /* box exceeds content area of parent */
+            /* explicit width of 100% - box exceeds content area of parent */
             #div-1 {
                 width: 100%; /* 100% x content area width of parent - 1080px */ 
                 padding: 30px; /* 1080 + 60 = 1140px */ 
@@ -31,7 +31,7 @@
                 /* margin: 10px 20px 30px 40px; */
             }
             
-            /* entire box will be within content area of parent */
+            /* no explicit width - what remains after assigning border, margin, padding horizontally is assigned as width - entire box will be within content area of parent */
             #div-2 {
                 /* width: 1080 - 140 = 940 */
                 padding: 30px; /* 60 */ 
