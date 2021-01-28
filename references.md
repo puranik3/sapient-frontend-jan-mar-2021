@@ -7,6 +7,7 @@ https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_
 
 ## CSS
 - [Shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
+- [box-sizing: border-box](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
 
 ## Browser support
 - https://kangax.github.io/compat-table/es6/
