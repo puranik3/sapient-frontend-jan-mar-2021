@@ -1,0 +1,33 @@
+<!-- https://medium.com/ -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .bold {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <button id="btn-click-me">Click me</button>
+        </section>
+
+        <p style="color: crimson;" id="para-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, necessitatibus deleniti. Maiores necessitatibus animi rerum expedita officiis, quisquam neque, exercitationem labore ex accusantium assumenda in velit reprehenderit sequi, itaque magni?
+        </p>
+
+        <script>
+            const btn = document.querySelector( '#btn-click-me' );
+
+            btn.onclick = function() {
+                // classList.add / classList.remove for editing CSS classes on a node
+                document.querySelector( '#para-1' ).style.color = 'olive';
+                document.querySelector( '#para-1' ).classList.add( 'bold' );
+            };
+        </script>
+    </body>
+</html>
