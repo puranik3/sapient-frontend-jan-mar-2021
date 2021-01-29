@@ -42,6 +42,11 @@
     * text-transform: uppercase, lowercase, capitalize
     * text-align: left, right, center, justify
     * word-spacing, letter-spacing
+- Jan 29
+    * Go through project document and understand the project requirements well. Come up with questions (if something is not clear etc.)
+    - overflow-x, overflow-y, resize
+    - Read up on clearfix class (pseudo element ::after / ::before)
+    - Try to use display: inline-block to get a 3-column layout
     
 
 
