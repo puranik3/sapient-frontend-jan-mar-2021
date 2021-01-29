@@ -48,7 +48,8 @@
     - Read up on clearfix class (pseudo element ::after / ::before)
     - Try to use display: inline-block to get a 3-column layout
     - Explore -webkit-line-clamp experimental CSS property - https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp
-    
+    - Use a custom font from http://fonts.google.com/
+    - Learn how to set portions of an image as a border
 
 
     

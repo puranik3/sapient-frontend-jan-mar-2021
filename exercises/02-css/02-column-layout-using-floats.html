@@ -44,6 +44,27 @@
             .float-parent {
 
             }
+
+            .trending-item-serial {
+                float: left;
+                width: 3em;
+            }
+
+            .trending-item-description {
+                /* float: left;  */
+                display: -webkit-box;
+                width: calc( 100% - 3em );
+                font-size: 1em;
+                line-height: 1.5; 
+                height: 6em; 
+                overflow: hidden; 
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 4;
+                   /* -moz-line-clamp: 2;
+                    -ms-line-clamp: 2; */
+                        line-clamp: 4;
+                -webkit-box-orient: vertical;
+            }
         </style>
     </head>
     <body>
@@ -61,20 +82,20 @@
             <section class="trending">
                 <div class="row">
                     <div class="col float-parent">
-                        <span style="float: left; width: 3em;">01</span>
-                        <div style="float: left; display: -webkit-box; width: calc( 100% - 3em ); font-size: 1em; line-height: 1.5; height: 3em; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+                        <span class="trending-item-serial">01</span>
+                        <div class="trending-item-description">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia mollitia, iusto dolor ipsam deleniti placeat officiis consequatur quidem excepturi. 
                         </div>
                     </div>
                     <div class="col">
-                        <span style="float: left; width: 3em;">02</span>
-                        <div style="float: left; width: calc( 100% - 3em ); font-size: 1.25em;">
+                        <span class="trending-item-serial">02</span>
+                        <div class="trending-item-description">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia mollitia, iusto dolor ipsam deleniti placeat officiis consequatur quidem excepturi. Nesciunt 
                         </div>
                     </div>
                     <div class="col">
-                        <span style="float: left; width: 3em;">03</span>
-                        <div style="float: left; width: calc( 100% - 3em ); font-size: 1.25em;">
+                        <span class="trending-item-serial">03</span>
+                        <div class="trending-item-description">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia mollitia, iusto dolor ipsam deleniti placeat officiis consequatur quidem excepturi. Nesciunt odio libero a nostrum illo facere culpa, rem laborum ratione! Lorem ipsum dolor 
                         </div>
                     </div>
