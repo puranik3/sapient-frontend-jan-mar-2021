@@ -8,21 +8,28 @@
             /* mobile first */
             .row {
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
             }
 
             .col {
+                flex-basis: 100%;
                 margin-bottom: 1em;
             }
 
             /* tablet */
             @media all and ( min-width : 640px ) {
-                
+                .col {
+                    flex-basis: 45%;
+                }
             }
             
             /* desktop */
             @media all and ( min-width : 992px ) {
-
+                .col {
+                    flex-basis: 20%;
+                }
             }
         </style>
     </head>
