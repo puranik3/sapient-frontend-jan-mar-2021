@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            /* mobile-first approach - think about mobile devices first (preferred) - min0width queries */
+            /* desktop-first approach - think about desktop devices first */
+
+            /*
+                Breakpoints
+                < 640px -> mobile
+                >= 640px  and < 1024px -> tablet
+                >= 1024px -> desktop
+                >= 1920px -> smart tv
+            */
+
+            /* mobile styles */
+            .intro {
+                color: green;
+            }
+
+             /* overrides styles for tablet */
+             @media all and ( min-width : 640px ) /*and ( max-width : 1023.99999px ) */ { /* min-width -> width >= */
+                .intro {
+                    color: crimson;
+                }
+            }
+            
+            /* overrides styles for desktop */
+            @media all and ( min-width : 1024px ) { /* min-width -> width >= */
+                .intro {
+                    color: blue;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid molestiae doloremque, maiores hic exercitationem, qui ex totam, mollitia assumenda ut natus doloribus reprehenderit. Fugit aut quisquam tenetur mollitia dicta!</div>
+    </body>
+</html>
