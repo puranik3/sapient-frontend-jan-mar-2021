@@ -13,20 +13,44 @@
             .col {
                 float: left;
                 width: 22.5%;
-                margin: 1.666667%;
+                margin-bottom: 1em;
+                margin-left: 1.666667%;
+                margin-right: 1.666667%;
             }
 
-            .col:nth-child(1) {
+            .col:nth-child(4n + 1) {
                 margin-left: 0;
             }
             
-            .col:nth-child(4) {
+            .col:nth-child(4n) {
                 margin-right: 0;
             }
 
-            /* overide styles above to produce a 2-column layout for 992px and lower */
+            /* overide styles above to produce a 2-column layout for <= 992px */
+            @media all and ( max-width : 992px ) {
+                .col {
+                    width: 47.5%;
+                    margin-left: 2.5%;
+                    margin-right: 2.5%;
+                }
+
+                .col:nth-child(2n + 1) {
+                    margin-left: 0;
+                }
+                
+                .col:nth-child(2n) {
+                    margin-right: 0;
+                }
+            } 
 
             /* overide styles above to produce a "stacked layout" (one column below other) on <= 640px */
+            @media all and ( max-width : 640px ) {
+                .col {
+                    width: 100%;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            } 
         </style>
     </head>
     <body>
