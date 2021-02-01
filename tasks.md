@@ -52,7 +52,7 @@
     - Learn how to set portions of an image as a border
 - Feb 1
     - Read about and use the ```flex``` shorthand property
-    - 
+    - Read about what is a flex line. Explore and use ```flex-wrap``` and ```align-content``` to distribute the extra space between flex lines.
 
 
     

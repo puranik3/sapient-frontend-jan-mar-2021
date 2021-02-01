@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            .parent, .child {
+                padding: 20px;
+                border: 1px solid black;
+            }
+
+            .parent {
+                display: flex;
+                flex-direction: row; /* "main" axis */
+                /* distribute extra space in "main" axis direction */
+                /* justify-content */
+
+                /* distribute extra space in "cross" axis direction */
+                /* align-items */
+            }
+
+            .child {
+                flex-basis: 30%;
+            }
+
+            .parent-1 {   
+                justify-content: center;
+                align-items: flex-start;
+            }
+            
+            .parent-1 .child-2 {
+                align-self: flex-end;
+            }
+            
+            .parent-2 {   
+                justify-content: flex-start; 
+                align-items: flex-end;
+            }
+
+            
+            .parent-3 {   
+                justify-content: flex-end; 
+                align-items: center;
+            }
+            
+            .parent-4 {   
+                justify-content: space-between;
+                align-items: stretch; /* default */
+            }
+            
+            .parent-5 {   
+                justify-content: space-around; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent parent-1">
+            <div class="child child-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, sunt saepe? Tempora debitis minima nobis repellendus excepturi est autem consectetur, minus saepe voluptatibus laudantium animi iusto et sunt laborum eos.</div>
+            <div class="child child-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis corrupti eos similique ab sequi dolores doloremque, hic quas voluptatibus fugit totam delectus. Et quas libero minima quos magni, error quibusdam?Nostrum aliquid voluptatibus sequi repellendus ad? Eveniet omnis est accusamus, quibusdam asperiores fugiat repellendus non sit, veritatis molestiae architecto facere doloribus praesentium minus id ullam sed eligendi esse natus necessitatibus.</div>
+            <div class="child child-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, quidem cum eum sequi, libero cupiditate explicabo vel, corrupti at animi facilis expedita temporibus magni vitae nobis accusantium ex sint deleniti.
+            Incidunt ipsam fuga aliquid fugit iusto commodi dolorem vitae alias ab iure autem sint et, minus pariatur magni provident, eligendi deserunt qui. Adipisci architecto, magnam atque sint laboriosam eaque. Nobis!
+            Esse aut numquam sequi voluptate ratione, tenetur officia enim in tempore nihil, iure molestiae quisquam consequatur natus quaerat! Culpa sequi ea illum eius mollitia reiciendis corporis nulla! Fugiat, facere ipsam!</div>
+        </div>
+        <div class="parent parent-2">
+            <div class="child child-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, sunt saepe? Tempora debitis minima nobis repellendus excepturi est autem consectetur, minus saepe voluptatibus laudantium animi iusto et sunt laborum eos.</div>
+            <div class="child child-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis corrupti eos similique ab sequi dolores doloremque, hic quas voluptatibus fugit totam delectus. Et quas libero minima quos magni, error quibusdam?Nostrum aliquid voluptatibus sequi repellendus ad? Eveniet omnis est accusamus, quibusdam asperiores fugiat repellendus non sit, veritatis molestiae architecto facere doloribus praesentium minus id ullam sed eligendi esse natus necessitatibus.</div>
+            <div class="child child-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, quidem cum eum sequi, libero cupiditate explicabo vel, corrupti at animi facilis expedita temporibus magni vitae nobis accusantium ex sint deleniti.
+            Incidunt ipsam fuga aliquid fugit iusto commodi dolorem vitae alias ab iure autem sint et, minus pariatur magni provident, eligendi deserunt qui. Adipisci architecto, magnam atque sint laboriosam eaque. Nobis!
+            Esse aut numquam sequi voluptate ratione, tenetur officia enim in tempore nihil, iure molestiae quisquam consequatur natus quaerat! Culpa sequi ea illum eius mollitia reiciendis corporis nulla! Fugiat, facere ipsam!</div>
+        </div>
+        <div class="parent parent-3">
+            <div class="child child-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, sunt saepe? Tempora debitis minima nobis repellendus excepturi est autem consectetur, minus saepe voluptatibus laudantium animi iusto et sunt laborum eos.</div>
+            <div class="child child-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis corrupti eos similique ab sequi dolores doloremque, hic quas voluptatibus fugit totam delectus. Et quas libero minima quos magni, error quibusdam?Nostrum aliquid voluptatibus sequi repellendus ad? Eveniet omnis est accusamus, quibusdam asperiores fugiat repellendus non sit, veritatis molestiae architecto facere doloribus praesentium minus id ullam sed eligendi esse natus necessitatibus.</div>
+            <div class="child child-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, quidem cum eum sequi, libero cupiditate explicabo vel, corrupti at animi facilis expedita temporibus magni vitae nobis accusantium ex sint deleniti.
+            Incidunt ipsam fuga aliquid fugit iusto commodi dolorem vitae alias ab iure autem sint et, minus pariatur magni provident, eligendi deserunt qui. Adipisci architecto, magnam atque sint laboriosam eaque. Nobis!
+            Esse aut numquam sequi voluptate ratione, tenetur officia enim in tempore nihil, iure molestiae quisquam consequatur natus quaerat! Culpa sequi ea illum eius mollitia reiciendis corporis nulla! Fugiat, facere ipsam!</div>
+        </div>
+        <div class="parent parent-4">
+            <div class="child child-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, sunt saepe? Tempora debitis minima nobis repellendus excepturi est autem consectetur, minus saepe voluptatibus laudantium animi iusto et sunt laborum eos.</div>
+            <div class="child child-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis corrupti eos similique ab sequi dolores doloremque, hic quas voluptatibus fugit totam delectus. Et quas libero minima quos magni, error quibusdam?Nostrum aliquid voluptatibus sequi repellendus ad? Eveniet omnis est accusamus, quibusdam asperiores fugiat repellendus non sit, veritatis molestiae architecto facere doloribus praesentium minus id ullam sed eligendi esse natus necessitatibus.</div>
+            <div class="child child-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, quidem cum eum sequi, libero cupiditate explicabo vel, corrupti at animi facilis expedita temporibus magni vitae nobis accusantium ex sint deleniti.
+            Incidunt ipsam fuga aliquid fugit iusto commodi dolorem vitae alias ab iure autem sint et, minus pariatur magni provident, eligendi deserunt qui. Adipisci architecto, magnam atque sint laboriosam eaque. Nobis!
+            Esse aut numquam sequi voluptate ratione, tenetur officia enim in tempore nihil, iure molestiae quisquam consequatur natus quaerat! Culpa sequi ea illum eius mollitia reiciendis corporis nulla! Fugiat, facere ipsam!</div>
+        </div>
+    </body>
+</html>

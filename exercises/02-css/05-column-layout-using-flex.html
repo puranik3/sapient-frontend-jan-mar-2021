@@ -1,0 +1,96 @@
+<!-- https://medium.com/ - Create a 3-column (equal width columns) using flex box properties. The column should have space in between -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            .row {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap; /* wrapping is allowed - 4th child comes below 1st */
+            }
+
+            .col {
+                flex-basis: 30%;
+                margin-bottom: 2em;
+            }
+
+            .trending {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .trending-item {
+                display: flex;
+            }
+
+            .trending-item-serial {
+                flex-basis: 3em;
+            }
+
+            .trending-item-description {
+                /* float: left;  */
+                display: -webkit-box;
+                width: calc( 100% - 3em );
+                font-size: 1em;
+                line-height: 1.5; 
+                height: 6em; 
+                overflow: hidden; 
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 4;
+                   /* -moz-line-clamp: 2;
+                    -ms-line-clamp: 2; */
+                        line-clamp: 4;
+                -webkit-box-orient: vertical;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <h1>Column layout using floats</h1>
+            
+            <p>Build the following using floats...</p>
+            <img src="../images/column-layout-using-floats.png" />
+            <hr />
+        </section>
+
+        <section>
+            <h2>Solution (partial)</h2>
+            <hr />
+            <section class="trending">
+                <div class="row">
+                    <div class="col trending-item">
+                        <span class="trending-item-serial">01</span>
+                        <div class="trending-item-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia mollitia, iusto dolor ipsam deleniti placeat officiis consequatur quidem excepturi. 
+                        </div>
+                    </div>
+                    <div class="col trending-item">
+                        <span class="trending-item-serial">02</span>
+                        <div class="trending-item-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia mollitia, iusto dolor ipsam 
+                        </div>
+                    </div>
+                    <div class="col trending-item">
+                        <span class="trending-item-serial">03</span>
+                        <div class="trending-item-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia mollitia, iusto dolor ipsam deleniti placeat officiis consequatur quidem excepturi. Nesciunt odio libero a nostrum illo facere culpa, rem laborum ratione! Lorem ipsum dolor 
+                        </div>
+                    </div>
+                    <div class="col trending-item">
+                        <span class="trending-item-serial">04</span>
+                        <div class="trending-item-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia mollitia, iusto dolor ipsam deleniti placeat officiis consequatur quidem excepturi. Nesciunt odio libero a nostrum illo facere culpa, rem laborum ratione! Lorem ipsum dolor 
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </body>
+</html>
