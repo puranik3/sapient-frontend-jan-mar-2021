@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            :root {
+                font-size: 16px; /* 1 rem - change this place and it changes font-size everywhere you use rem as the unit - so it is preferred */
+            }
+
+            body {
+                background-color: purple;;
+            }
+
+            .modal {
+                display: none;
+            }
+
+            .modal-overlay {
+                position: fixed;
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                width: 100%;
+                background-color: #dcdcdc80;
+                z-index: 1; /* lower value of z-index -> send to back */
+            }
+
+            .modal-dialog {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                
+                /* 2 alternatives for horizontal centering */
+                /* left: calc( 50% - 200px ); */
+                margin-top: -200px;
+                margin-left: -200px;
+                
+                width: 400px;
+                padding: 40px;
+                border: 1px solid black;
+                height: 200px;
+                font-size: 1.5rem; /* 1.5 * 16 = 24px */
+                background-color: white;
+                *overflow: auto;
+                box-shadow: 0px 0px 10px 10px lightgoldenrodyellow;
+                z-index: 1; /* higher value of z-index -> bring to front */
+            }
+
+            .no-scroll {
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- When you are stuck with z-index explore these -->
+        <!-- What creates a positioning context / stacking context? -->
+        <!-- Offset parent of a positionaed element -->
+        <button id="btn-login">Login</button>
+        <div class="modal" id="modal-login">
+            <div class="modal-dialog">
+                <h2>Login</h2>
+                <hr />
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo? Eligendi dolorum, ut nulla nihil explicabo bl
+                </p>
+            </div>
+
+            <!-- this might well have been before /modal-dialog and ALL WILL BE FINE!!! -->
+            <div class="modal-overlay"></div>
+        </div>
+
+        <script>
+            const btnLogin = document.getElementById( 'btn-login' );
+            const modalLogin = document.getElementById( 'modal-login' );
+
+            btnLogin.onclick = function() {
+                modalLogin.style.display = 'block';
+                document.body.classList.add( 'no-scroll' );
+            };
+        </script>
+    </body>
+</html>
