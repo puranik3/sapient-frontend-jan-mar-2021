@@ -50,6 +50,9 @@
     - Explore -webkit-line-clamp experimental CSS property - https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp
     - Use a custom font from http://fonts.google.com/
     - Learn how to set portions of an image as a border
+- Feb 1
+    - Read about and use the ```flex``` shorthand property
+    - 
 
 
     
