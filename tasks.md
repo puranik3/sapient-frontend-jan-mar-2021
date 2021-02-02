@@ -54,8 +54,13 @@
     - Read about and use the ```flex``` shorthand property
     - Read about what is a flex line. Explore and use ```flex-wrap``` and ```align-content``` to distribute the extra space between flex lines.
     - When you are stuck with z-index explore these
-    - What creates a positioning context / stacking context?
-    - Offset parent of a positionaed element
+        - What creates a positioning context / stacking context?
+        - Offset parent of a positionaed element
+- Feb 2
+    - Details about web a11y
+    - Use figure and figcaption etc. for captioning images
+    - Read up on Landmarks, upto Time-based media in a11y reference document (docs/ folder).
+    - Normalize stylesheet - what is it? HOw s it different from reset stylesheet.
 
 
     
