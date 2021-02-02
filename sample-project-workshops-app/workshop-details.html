@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a workshops application. It helps find technical workshops happening in and around your place.">
+        
+        <!-- reset stylesheet - removes default styling by browser -->
+        <link rel="stylesheet" href="css/external/reset.css">
+        <link rel="stylesheet" href="css/external/fontawesome-free-5.15.2-web/css/all.min.css">
+        <link rel="stylesheet" href="css/utils.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/workshops-list.css">
+
+        <title>React - Workshop Details | Workshops App</title>
+    </head>
+    <body>
+        <nav class="navbar-main">
+            <div class="container nav-wrapper">
+                <ul class="nav nav-desktop">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="workshops.html">Workshops List</a>
+                    </li>
+                    <li>
+                        <a href="feedback.html">Feedback</a>
+                    </li>
+                </ul>
+                <button class="btn-menu btn-icon">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul class="nav nav-mobile container hide">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="workshops.html">Workshops List</a>
+                </li>
+                <li>
+                    <a href="feedback.html">Feedback</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <section class="container">
+                <header>
+                    <div class="d-flex justify-content-space-between my-5">
+                        <h1>React JS Masterclass</h1>
+                    </div>
+                    <hr />
+                </header>
+                <div class="workshop-details row">
+                    <div class="col-12 col-sm-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png" class="img-responsive" />
+                    </div>
+                    <div class="col-12 col-sm-8">
+                        <div class="row">
+                            <div class="col-6">
+                                <div>
+                                    <small>
+                                        <time datetime="2019-01-14">Jan 14, 2019</time> - <time datetime="2019-01-16">Jan 16, 2019</time>
+                                    </small>
+                                </div>
+                                <div>
+                                    <small>
+                                        <time>10:00 am</time> - <time>6:00 pm</time>
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div>
+                                    <small>
+                                        <i class="fas fa-times"></i> In-person
+                                    </small>
+                                </div>
+                                <div>
+                                    <small>
+                                        <i class="fas fa-check"></i> Online
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            <strong>React</strong> (also known as <strong>React.js</strong> or <strong>ReactJS</strong>) is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.
+                        </p>
+                        
+                        <p>
+                            React can be used as a base in the development of single-page or mobile applications. Complex React applications usually require the use of additional libraries for state management, routing, and interaction with an API.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="page-footer">
+            <nav class="navbar-footer">
+                <div class="container">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="workshops.html">Workshops List</a>
+                        </li>
+                        <li>
+                            <a href="feedback.html">Feedback</a>
+                        </li>
+                        <li>
+                            <a href="sitemap.html">Site map</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="text-center">&copy; ABC Consulting</div>
+        </footer>
+        <script src="js/app.js"></script>
+    </body>
+</html>
