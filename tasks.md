@@ -61,6 +61,6 @@
     - Use figure and figcaption etc. for captioning images
     - Read up on Landmarks, upto Time-based media in a11y reference document (docs/ folder).
     - Normalize stylesheet - what is it? HOw s it different from reset stylesheet.
-
+    - Fix the navigation menu for the workshops app on the top
 
     

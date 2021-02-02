@@ -6,15 +6,37 @@
     box-sizing: border-box;
 }
 
+.img-responsive {
+    width: 100%;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
 .container {
     max-width: 1280px;
     width: 90%;
     margin: 0 auto;
 }
 
+.my-1 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em !important;
+}
+
 .my-3 {
-    margin-top: 1em !important;
+    margin-top: 1em;
     margin-bottom: 1em !important;
+}
+
+.my-5 {
+    margin-top: 1.75em;
+    margin-bottom: 1.75em !important;
 }
 
 .text-no-underline {
@@ -23,6 +45,10 @@
 
 .text-reset {
     color: initial !important;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .jumbotron {
@@ -38,4 +64,35 @@
 
 .jumbotron p + p {
     margin-top: 1.5em;
+}
+
+.card {
+    padding: 1em;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+.card:hover {
+    box-shadow: 0 0 1px 1px rgb( 235, 165, 32, 0.5 );
+}
+
+.btn {
+    padding: 0.5em 2em;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #0069d9;
+}
+
+.btn-primary:hover {
+    background-color: #0069ff;
+}
+
+.btn-danger {
+    color: white;
+    background-color: crimson;
 }
