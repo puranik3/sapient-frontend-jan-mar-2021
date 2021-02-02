@@ -1,5 +1,19 @@
 :root {
-    font-size: 16px;
+    font-size: 12px;
+}
+
+/* tablet */
+@media all and ( min-width : 640px ) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+/* desktop */
+@media all and ( min-width : 992px ) {
+    :root {
+        font-size: 16px;
+    }
 }
 
 * {
@@ -8,6 +22,14 @@
 
 .img-responsive {
     width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: initial;
 }
 
 .d-flex {
@@ -95,4 +117,11 @@
 .btn-danger {
     color: white;
     background-color: crimson;
+}
+
+.btn-icon {
+    padding: 8px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
 }
